@@ -16,10 +16,6 @@
     "target_path": "external/sony/boringssl-compat"
   },
   {
-    "repository": "android_hardware_qcom_fm",
-    "target_path": "hardware/qcom/fm"
-  },
-  {
    "repository": "proprietary_vendor_motorola",
    "target_path": "vendor/motorola"
   }
