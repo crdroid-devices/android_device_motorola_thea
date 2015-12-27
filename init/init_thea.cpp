@@ -82,7 +82,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "thea_retbr_ds-user 6.0 MPB24.65-10 10 release-keys");
         property_set("ro.build.fingerprint", "motorola/thea_retbr_ds/thea_umtsds:6.0/MPB24.65-10/10:user/release-keys");
         property_set("ro.build.product", "thea_umtsds");
-        property_set("ro.mot.build.customerid", "netbr");
+        property_set("ro.mot.build.customerid", "retbr");
         property_set("ro.product.device", "thea_umtsds");
     } else if (ISMATCH(radio, "0xD")) {
         /* XT1079 */
@@ -90,7 +90,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "thea_retcn_ds-user 6.0 MPB24.65-10 10 release-keys");
         property_set("ro.build.fingerprint", "motorola/thea_retcn_ds/thea_ds:6.0/MPB24.65-10/10:user/release-keys");
         property_set("ro.build.product", "thea_ds");
-        property_set("ro.com.android.dataroaming", "false");
         property_set("ro.mot.build.customerid", "retcn");
         property_set("ro.product.device", "thea_ds");
     }
@@ -128,5 +127,6 @@ void cdma_properties(const char *cdma_sub, const char *network)
     property_set("ro.com.google.clientidbase.yt", "android-motorola");
     property_set("ro.telephony.default_cdma_sub", cdma_sub);
     property_set("ro.telephony.default_network", network);
+    property_set("ro.telephony.ril.config", "simactivation");
     property_set("telephony.lteOnCdmaDevice", "1");
 }
